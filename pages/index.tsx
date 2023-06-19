@@ -38,12 +38,12 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                  Welcome Nft Market Place
                 </span>
                 <br />
-                faster than ever.
+               If you want NFT,then you are in the right place.
               </h1>
-              <p className={styles.heroSubtitle}>
+              {/* <p className={styles.heroSubtitle}>
                 <Link
                   className={styles.link}
                   href="https://thirdweb.com"
@@ -53,19 +53,19 @@ const Home: NextPage = () => {
                 </Link>{" "}
                 gives you the tools you need to create audited, performant, and
                 flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
-              </p>
+              </p> */}
 
               <div className={styles.heroCtaContainer}>
                 <Link className={styles.heroCta} href="/buy">
                   Get Started
                 </Link>
-                <Link
+                {/* <Link
                   className={styles.secondaryCta}
                   href="https://github.com/thirdweb-example/marketplace-v3"
                   target="_blank"
                 >
                   GitHub
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
