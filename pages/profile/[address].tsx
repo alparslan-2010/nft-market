@@ -109,7 +109,7 @@ export default function ProfilePage() {
         <NFTGrid
           data={ownedNfts}
           isLoading={loadingOwnedNfts}
-          emptyText="It looks like you don't have any NFTs from this collection. To buy it, go to the Claim page!. You can click the Claim button...."
+          emptyText="It looks like you don't have any NFTs from this collection. To buy it, go to the Claim page!. You can click the Claim button..."
   
         />
          <Link href="https://nftclaim.vercel.app/" target="_blank" className={styles.link}>
