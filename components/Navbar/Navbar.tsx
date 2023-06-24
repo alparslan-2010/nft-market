@@ -30,6 +30,9 @@ export function Navbar() {
             <Link href="/sell" className={styles.link}>
               Sell
             </Link>
+            <Link href="https://nftclaim.vercel.app/" target="_blank" className={styles.link}>
+             Claim
+            </Link>
           </div>
         </div>
 
@@ -41,7 +44,7 @@ export function Navbar() {
             <Link className={styles.link} href={`/profile/${address}`}>
               <Image
                 className={styles.profileImage}
-                src="/user-icon.png"
+                src="/user-icon11.png"
                 width={42}
                 height={42}
                 alt="Profile"

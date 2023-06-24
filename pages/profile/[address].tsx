@@ -16,6 +16,7 @@ import {
 } from "../../const/contractAddresses";
 import styles from "../../styles/Profile.module.css";
 import randomColor from "../../util/randomColor";
+import Link from "next/link";
 
 const [randomColor1, randomColor2, randomColor3, randomColor4] = [
   randomColor(),
@@ -108,8 +109,15 @@ export default function ProfilePage() {
         <NFTGrid
           data={ownedNfts}
           isLoading={loadingOwnedNfts}
-          emptyText="Looks like you don't have any NFTs from this collection. Head to the buy page to buy some!"
+          emptyText="It looks like you don't have any NFTs from this collection. To buy it, go to the Claim page!. You can click the Claim button...."
+  
         />
+         <Link href="https://nftclaim.vercel.app/" target="_blank" className={styles.link}>
+             Claim
+            </Link>
+         
+
+
       </div>
 
       <div
@@ -136,7 +144,7 @@ export default function ProfilePage() {
         {loadingAuctions ? (
           <p>Loading...</p>
         ) : auctionListings && auctionListings.length === 0 ? (
-          <p>Nothing for sale yet! Head to the sell tab to list an NFT.</p>
+          <p>Nothing for sale yet! Head to the sell tab to list an NFT. </p>
         ) : (
           auctionListings?.map((listing) => (
             <ListingWrapper listing={listing} key={listing.id} />
