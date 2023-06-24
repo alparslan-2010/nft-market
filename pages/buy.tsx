@@ -5,7 +5,7 @@ import NFTGrid from "../components/NFT/NFTGrid";
 import { NFT_COLLECTION_ADDRESS } from "../const/contractAddresses";
 import Link from "next/link";
 
-import Filter from "../components/Filter/Filter";
+
 
 export default function Buy() {
   // Load all of the NFTs from the NFT Collection

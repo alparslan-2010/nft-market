@@ -37,11 +37,7 @@ const Home: NextPage = () => {
           <div className={styles.heroBodyContainer}>
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
-                <span className={styles.heroTitleGradient}>
-                  Welcome Nft Market Place
-                </span>
-                <br />
-               If you want NFT,then you are in the right place.
+                
               </h1>
               {/* <p className={styles.heroSubtitle}>
                 <Link
